@@ -30,16 +30,13 @@ def run_query(sql_query):
 
 
 # downloading data
-ds1=pd.read_excel(r"dataset1.xlsm")
-ds2=pd.read_excel(r"dataset2.xlsm")
+# ds1=pd.read_excel(r"dataset1.xlsm")
+# ds2=pd.read_excel(r"dataset2.xlsm")
 
-con = sqlite3.connect("patients.db")
-ds1.to_sql("healthinfo", con, index=False, if_exists="replace")
-ds2.to_sql("physicalactivity", con, index=False, if_exists="replace")
+# con = sqlite3.connect("patients.db")
+# ds1.to_sql("healthinfo", con, index=False, if_exists="replace")
+# ds2.to_sql("physicalactivity", con, index=False, if_exists="replace")
 
-
-testquery1="select age from healthinfo"
-age_info=pd.read_sql_query(testquery1, con)
 
 ### DEFINITIONS OF PROMPTS
 # description of database
