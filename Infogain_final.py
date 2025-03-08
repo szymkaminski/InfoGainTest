@@ -30,8 +30,8 @@ def run_query(sql_query):
 
 
 # downloading data
-ds1=pd.read_excel(r"C:\Python files\Infogain dataset\dataset1.xlsm")
-ds2=pd.read_excel(r"C:\Python files\Infogain dataset\dataset2.xlsm")
+ds1=pd.read_excel(r"InfoGainTest/dataset1.xlsm")
+ds2=pd.read_excel(r"InfoGainTest/dataset1.xlsm")
 
 con = sqlite3.connect("patients.db")
 ds1.to_sql("healthinfo", con, index=False, if_exists="replace")
